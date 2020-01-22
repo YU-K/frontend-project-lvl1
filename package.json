@@ -29,5 +29,8 @@
   },
   "files": [
     "diist"
-  ]
+  ],
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }
