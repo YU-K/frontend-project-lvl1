@@ -7,3 +7,6 @@
 [![Build Status](https://travis-ci.com/YU-K/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/YU-K/frontend-project-lvl1)
 
 [![asciicast](https://asciinema.org/a/kdRM3f2XUtDHfphJQHNOY9ddf.svg)](https://asciinema.org/a/kdRM3f2XUtDHfphJQHNOY9ddf)
+
+#### Brain-calc game installation:
+[![asciicast](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV.svg)](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV)
