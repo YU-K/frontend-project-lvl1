@@ -1,5 +1,5 @@
 #!/usr/local/bin/node
-import isEvenGame from '../game';
+import isEvenGame from '../games/even_game';
 
 
 console.log('Welcome to the Brain Games!');
