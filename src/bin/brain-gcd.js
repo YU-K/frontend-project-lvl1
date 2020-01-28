@@ -1,6 +1,5 @@
 #!/usr/local/bin/node
-import { askName } from '..';
+import calculateGcd from '../games/gcd_game';
 
 console.log('Welcome to the Brain Games!');
-console.log();
-askName();
+calculateGcd();
