@@ -13,3 +13,6 @@
 
 #### Brain-gcd game installation:
 [![asciicast](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey.svg)](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey)
+
+#### Brain-progression game installation:
+[![asciicast](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR.svg)](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR)
