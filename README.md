@@ -9,7 +9,7 @@
 [![asciicast](https://asciinema.org/a/kdRM3f2XUtDHfphJQHNOY9ddf.svg)](https://asciinema.org/a/kdRM3f2XUtDHfphJQHNOY9ddf)
 
 #### Brain-calc game installation:
-[![asciicast](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV.svg)](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV)
+[![asciicast](https://asciinema.org/a/mpWaTtSAmkwdCxe9GN9iwhL2v.svg)](https://asciinema.org/a/mpWaTtSAmkwdCxe9GN9iwhL2v)
 
 #### Brain-gcd game installation:
 [![asciicast](https://asciinema.org/a/p1beu3RDVnU9UeMrxWOofipBf.svg)](https://asciinema.org/a/p1beu3RDVnU9UeMrxWOofipBf)
