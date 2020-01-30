@@ -1,7 +1,8 @@
 {
   "name": "frontend-project-lvl1",
   "version": "1.0.0",
-  "description": "",
+  "description": "Brain-games",
+  "keywords": ["games", "brain-games", "console games"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,7 +21,7 @@
     "type": "git",
     "url": "git+https://github.com/YU-K/frontend-project-lvl1.git"
   },
-  "author": "",
+  "author": "YU-K",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/YU-K/frontend-project-lvl1/issues"
