@@ -12,7 +12,7 @@
 [![asciicast](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV.svg)](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV)
 
 #### Brain-gcd game installation:
-[![asciicast](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey.svg)](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey)
+[![asciicast](https://asciinema.org/a/p1beu3RDVnU9UeMrxWOofipBf.svg)](https://asciinema.org/a/p1beu3RDVnU9UeMrxWOofipBf)
 
 #### Brain-progression game installation:
 [![asciicast](https://asciinema.org/a/m9xiLplHs7AmE4gnXMOeIMu3P.svg)](https://asciinema.org/a/m9xiLplHs7AmE4gnXMOeIMu3P)
