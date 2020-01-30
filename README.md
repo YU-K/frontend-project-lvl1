@@ -16,3 +16,6 @@
 
 #### Brain-progression game installation:
 [![asciicast](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR.svg)](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR)
+
+#### Brain-prime game installation:
+[![asciicast](https://asciinema.org/a/YW5pHpyNgfh1nwR0gY1GVsxtS.svg)](https://asciinema.org/a/YW5pHpyNgfh1nwR0gY1GVsxtS)
