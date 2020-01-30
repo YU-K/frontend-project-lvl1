@@ -18,4 +18,4 @@
 [![asciicast](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR.svg)](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR)
 
 #### Brain-prime game installation:
-[![asciicast](https://asciinema.org/a/YW5pHpyNgfh1nwR0gY1GVsxtS.svg)](https://asciinema.org/a/YW5pHpyNgfh1nwR0gY1GVsxtS)
+[![asciicast](https://asciinema.org/a/A24qUYvRJlqK8MXQPsS734gY9.svg)](https://asciinema.org/a/A24qUYvRJlqK8MXQPsS734gY9)
