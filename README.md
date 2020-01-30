@@ -15,7 +15,7 @@
 [![asciicast](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey.svg)](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey)
 
 #### Brain-progression game installation:
-[![asciicast](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR.svg)](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR)
+[![asciicast](https://asciinema.org/a/m9xiLplHs7AmE4gnXMOeIMu3P.svg)](https://asciinema.org/a/m9xiLplHs7AmE4gnXMOeIMu3P)
 
 #### Brain-prime game installation:
 [![asciicast](https://asciinema.org/a/A24qUYvRJlqK8MXQPsS734gY9.svg)](https://asciinema.org/a/A24qUYvRJlqK8MXQPsS734gY9)
