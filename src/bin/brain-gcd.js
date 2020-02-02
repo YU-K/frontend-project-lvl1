@@ -1,5 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 import calculateGcd from '../games/gcd_game';
 
-console.log('Welcome to the Brain Games!');
 calculateGcd();

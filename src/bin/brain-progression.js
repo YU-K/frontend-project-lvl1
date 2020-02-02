@@ -1,5 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 import brainProgGame from '../games/brain-progression';
 
-console.log('Welcome to the Brain Games!');
 brainProgGame();

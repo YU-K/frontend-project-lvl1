@@ -6,6 +6,7 @@ const brainProgGame = () => {
   let correctAnswer = 0;
   let arithmProg = '';
   let iterForWhile = 0;
+  console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log('What number is missing in the progression?');
   console.log(`Hello, ${name}`);

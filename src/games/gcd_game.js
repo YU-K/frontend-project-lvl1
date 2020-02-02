@@ -3,6 +3,7 @@ import readlineSync from 'readline-sync';
 const getRandomNum = (max, min) => Math.round(Math.random() * (max - min) + min);
 
 const calculateGcd = () => {
+  console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   console.log('Find the greatest common divisor of given numbers.');

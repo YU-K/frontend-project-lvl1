@@ -4,6 +4,9 @@ const isEvenGame = () => {
   const maxNumber = 100;
   const minNumber = 1;
   let rightAnswer = 0;
+  console.log('Welcome to the Brain Games!');
+  console.log('Answer \'yes\' if the number is even, otherwise answer \'no\'.');
+  console.log();
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   while (rightAnswer < 3) {

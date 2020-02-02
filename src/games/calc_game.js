@@ -5,6 +5,10 @@ const getRandomNum = (max, min) => Math.round(Math.random() * (max - min) + min)
 
 
 const calculate = () => {
+  console.log();
+  console.log('Welcome to the Brain Games!');
+  console.log('What is the result of the expression?');
+  console.log();
   const operators = ['+', '-', '*'];
   const size = operators.length;
   const name = readlineSync.question('May I have your name? ');

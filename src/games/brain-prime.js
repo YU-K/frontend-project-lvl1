@@ -17,13 +17,14 @@ const brainPrime = () => {
     }
     return true;
   };
+  console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   let count = 0;
 
   while (count < 3) {
-    const number = getRandomNum(0, 1000);
+    const number = getRandomNum(0, 100);
     console.log(`Question: ${number}`);
     const gamerAnswer = readlineSync.question('Your answer: ');
     const correctAnswer = isPrime(number) ? 'yes' : 'no';

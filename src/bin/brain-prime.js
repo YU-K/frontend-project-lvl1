@@ -1,5 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 import brainPrime from '../games/brain-prime';
 
-console.log('Welcome to the Brain Games!');
 brainPrime();
