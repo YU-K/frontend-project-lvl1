@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const getRandomIndex = (max) => Math.floor(Math.random() * Math.floor(max));
-const getRandomNum = (max, min) => Math.round(Math.random() * (max - min) + min);
+const getRandomNum = (min, max) => Math.round(Math.random() * (max - min) + min);
 const operators = ['+', '-', '*'];
 
 
@@ -15,16 +15,18 @@ const calculate = () => {
   console.log(`Hello, ${name}`);
   console.log();
   let count = 0;
+  const maxValue = 100;
+  const minValue = 1;
   //
   while (count < 3) {
-    const number1 = getRandomNum(100, 1);
-    const number2 = getRandomNum(100, 1);
+    const number1 = getRandomNum(minValue, maxValue);
+    const number2 = getRandomNum(minValue, maxValue);
     const index = getRandomIndex(size);
     const operator = operators[index];
 
     console.log(`Question: ${number1} ${operator} ${number2}`);
     const gamerAnswer = Number(readlineSync.question('Your answer: '));
-    let correctAnswer = 0;
+    let correctAnswer = null;
 
     switch (operator) {
       case '+':

@@ -10,13 +10,18 @@ const brainProgGame = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log('What number is missing in the progression?');
   console.log(`Hello, ${name}`);
+  const minValue = 2;
+  const startMaxValue = 10;
+  const stepMaxValue = 6;
+  const indexMinValue = 0;
+  const indexMaxValue = 9;
 
   while (iterForWhile < 3) {
     const str = [];
     let count = 0;
-    const start = getRandom(2, 10);
-    const step = getRandom(2, 6);
-    const indexOfNumX = getRandom(0, 9);
+    const start = getRandom(minValue, startMaxValue);
+    const step = getRandom(minValue, stepMaxValue);
+    const indexOfNumX = getRandom(indexMinValue, indexMaxValue);
     for (let i = start; count < 10; i += step) {
       if (count === indexOfNumX) {
         correctAnswer = i;
