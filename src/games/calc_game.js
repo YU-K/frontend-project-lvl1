@@ -14,11 +14,11 @@ const calculate = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   console.log();
-  let count = 0;
+  const shots = 3;
   const maxValue = 100;
   const minValue = 1;
   //
-  while (count < 3) {
+  for (let i = 1; i <= shots; i += 1) {
     const number1 = getRandomNum(minValue, maxValue);
     const number2 = getRandomNum(minValue, maxValue);
     const index = getRandomIndex(size);
@@ -44,15 +44,10 @@ const calculate = () => {
     if (gamerAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}. Let's try again, ${name}`);
-      break;
+      return console.log(`${gamerAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}. Let's try again, ${name}`);
     }
-    count += 1;
   }
-
-  if (count === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default calculate;

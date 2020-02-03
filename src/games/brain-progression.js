@@ -5,7 +5,7 @@ const brainProgGame = () => {
   //
   let correctAnswer = 0;
   let arithmProg = '';
-  let iterForWhile = 0;
+  const shots = 3;
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log('What number is missing in the progression?');
@@ -16,18 +16,18 @@ const brainProgGame = () => {
   const indexMinValue = 0;
   const indexMaxValue = 9;
 
-  while (iterForWhile < 3) {
+  for (let i = 1; i <= shots; i += 1) {
     const str = [];
     let count = 0;
     const start = getRandom(minValue, startMaxValue);
     const step = getRandom(minValue, stepMaxValue);
     const indexOfNumX = getRandom(indexMinValue, indexMaxValue);
-    for (let i = start; count < 10; i += step) {
+    for (let iter = start; count < 10; iter += step) {
       if (count === indexOfNumX) {
-        correctAnswer = i;
+        correctAnswer = iter;
         str.push('..');
       } else {
-        str.push(i);
+        str.push(iter);
       }
       count += 1;
     }
@@ -40,11 +40,9 @@ const brainProgGame = () => {
       console.log('Correct!');
       arithmProg = '';
     } else {
-      console.log(`${gamerAnswer} is wrong answer :(. Correct answer was ${correctAnswer}. Let's try again, ${name}`);
-      break;
+      return console.log(`${gamerAnswer} is wrong answer :(. Correct answer was ${correctAnswer}. Let's try again, ${name}`);
     }
-    iterForWhile += 1;
   }
-  console.log(`Congratulations, ${name}!`);
+  return console.log(`Congratulations, ${name}!`);
 };
 export default brainProgGame;

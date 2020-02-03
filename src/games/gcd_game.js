@@ -7,11 +7,11 @@ const calculateGcd = () => {
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}`);
   console.log('Find the greatest common divisor of given numbers.');
-  let count = 0;
+  const shots = 3;
   const maxValue = 100;
   const minValue = 1;
 
-  while (count < 3) {
+  for (let i = 1; i <= shots; i += 1) {
     let number1 = getRandomNum(minValue, maxValue);
     let number2 = getRandomNum(minValue, maxValue);
     console.log(`Question: ${number1}  ${number2}`);
@@ -29,14 +29,10 @@ const calculateGcd = () => {
     if (gamerAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`${gamerAnswer} is wrong answer :(. Correct answer was ${correctAnswer}. Let's try again, ${name}`);
-      break;
+      return console.log(`${gamerAnswer} is wrong answer :(. Correct answer was ${correctAnswer}. Let's try again, ${name}`);
     }
-    count += 1;
   }
-  if (count === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  return console.log(`Congratulations, ${name}!`);
 };
 
 export default calculateGcd;

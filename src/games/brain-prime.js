@@ -23,9 +23,9 @@ const brainPrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   const minValue = 0;
   const maxValue = 100;
-  let count = 0;
+  const shots = 3;
 
-  while (count < 3) {
+  for (let i = 1; i <= shots; i += 1) {
     const number = getRandomNum(minValue, maxValue);
     console.log(`Question: ${number}`);
     const gamerAnswer = readlineSync.question('Your answer: ');
@@ -34,13 +34,9 @@ const brainPrime = () => {
     if (gamerAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`"${gamerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again, ${name}`);
-      break;
+      return console.log(`"${gamerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}". Let's try again, ${name}`);
     }
-    count += 1;
   }
-  if (count === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
+  return console.log(`Congratulations, ${name}!`);
 };
 export default brainPrime;
