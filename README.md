@@ -6,16 +6,17 @@
 
 [![Build Status](https://travis-ci.com/YU-K/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/YU-K/frontend-project-lvl1)
 
-[![asciicast](https://asciinema.org/a/kdRM3f2XUtDHfphJQHNOY9ddf.svg)](https://asciinema.org/a/kdRM3f2XUtDHfphJQHNOY9ddf)
+#### Brain-even game installation:
+[![asciicast](https://asciinema.org/a/5DClmytP53wDrlp6cqkCIjpY7.svg)](https://asciinema.org/a/5DClmytP53wDrlp6cqkCIjpY7)
 
 #### Brain-calc game installation:
-[![asciicast](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV.svg)](https://asciinema.org/a/ZZF9mGdqh04jdmloE7S8DpwvV)
+[![asciicast](https://asciinema.org/a/mpWaTtSAmkwdCxe9GN9iwhL2v.svg)](https://asciinema.org/a/mpWaTtSAmkwdCxe9GN9iwhL2v)
 
 #### Brain-gcd game installation:
-[![asciicast](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey.svg)](https://asciinema.org/a/0psEHDZ2d8J6GUoXrtCNxriey)
+[![asciicast](https://asciinema.org/a/p1beu3RDVnU9UeMrxWOofipBf.svg)](https://asciinema.org/a/p1beu3RDVnU9UeMrxWOofipBf)
 
 #### Brain-progression game installation:
-[![asciicast](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR.svg)](https://asciinema.org/a/QuEuJd6mGl9NXt6zFjv4vTtiR)
+[![asciicast](https://asciinema.org/a/m9xiLplHs7AmE4gnXMOeIMu3P.svg)](https://asciinema.org/a/m9xiLplHs7AmE4gnXMOeIMu3P)
 
 #### Brain-prime game installation:
-[![asciicast](https://asciinema.org/a/YW5pHpyNgfh1nwR0gY1GVsxtS.svg)](https://asciinema.org/a/YW5pHpyNgfh1nwR0gY1GVsxtS)
+[![asciicast](https://asciinema.org/a/A24qUYvRJlqK8MXQPsS734gY9.svg)](https://asciinema.org/a/A24qUYvRJlqK8MXQPsS734gY9)
