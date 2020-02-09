@@ -1,38 +1,24 @@
-import readlineSync from 'readline-sync';
+import { getRandomNumber } from '../utils';
+import gamesEngine from '../engine';
 
-const getRandomNum = (min, max) => Math.round(Math.random() * (max - min) + min);
+const task = 'Find the greatest common divisor of given numbers.';
 
-const calculateGcd = () => {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}`);
-  console.log('Find the greatest common divisor of given numbers.');
-  const shots = 3;
-  const maxValue = 100;
-  const minValue = 1;
+const gameData = () => {
+  let number1 = getRandomNumber(1, 100);
+  let number2 = getRandomNumber(1, 100);
+  let correctAnswer = null;
+  const question = `${number1}  ${number2}`;
 
-  for (let i = 1; i <= shots; i += 1) {
-    let number1 = getRandomNum(minValue, maxValue);
-    let number2 = getRandomNum(minValue, maxValue);
-    console.log(`Question: ${number1}  ${number2}`);
-    const gamerAnswer = Number(readlineSync.question('Your answer: '));
-    let correctAnswer = null;
-
-    while (number1 !== 0 && number2 !== 0) {
-      if (number1 > number2) {
-        number1 %= number2;
-      } else {
-        number2 %= number1;
-      }
-      correctAnswer = number1 + number2;
-    }
-    if (gamerAnswer === correctAnswer) {
-      console.log('Correct!');
+  while (number1 !== 0 && number2 !== 0) {
+    if (number1 > number2) {
+      number1 %= number2;
     } else {
-      return console.log(`${gamerAnswer} is wrong answer :(. Correct answer was ${correctAnswer}. Let's try again, ${name}`);
+      number2 %= number1;
     }
+    correctAnswer = number1 + number2;
   }
-  return console.log(`Congratulations, ${name}!`);
-};
+  correctAnswer = String(correctAnswer);
 
-export default calculateGcd;
+  return [correctAnswer, question];
+};
+export default () => gamesEngine(gameData, task);
