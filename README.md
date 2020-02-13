@@ -2,7 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a51cb14fe6243aa24053/maintainability)](https://codeclimate.com/github/YU-K/frontend-project-lvl1/maintainability)
 
-![Lint](https://github.com/YU-K/frontend-project-lvl1/workflows/Lint/badge.svg)
+![Lint](https://github.com/YU-K/frontend-project-lvl1/workflows/Lint/badge.svg)(https://github.com/YU-K/frontend-project-lvl1/actions)
 
 [![Build Status](https://travis-ci.com/YU-K/frontend-project-lvl1.svg?branch=master)](https://travis-ci.com/YU-K/frontend-project-lvl1)
 
