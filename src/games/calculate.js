@@ -3,7 +3,7 @@ import gamesEngine from '../engine';
 
 const task = 'What is the result of the expression?';
 
-const gameData = () => {
+const giveGameData = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
   const operators = ['+', '-', '*'];
@@ -11,7 +11,7 @@ const gameData = () => {
   const index = getRandomIndex(size);
   const operator = operators[index];
   const question = `Question: ${number1} ${operator} ${number2}`;
-  let correctAnswer = null;
+  let correctAnswer;
 
   switch (operator) {
     case '+':
@@ -27,9 +27,7 @@ const gameData = () => {
       break;
   }
 
-  correctAnswer = String(correctAnswer);
-
-  return [correctAnswer, question];
+  return [String(correctAnswer), question];
 };
 
-export default () => gamesEngine(gameData, task);
+export default () => gamesEngine(giveGameData, task);

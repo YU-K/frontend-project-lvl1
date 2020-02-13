@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import calculateGcd from '../games/gcd_game';
+import calculateGcd from '../games/gcd';
 
 calculateGcd();
