@@ -1,22 +1,24 @@
 import { getRandomNumber } from '../utils';
-import gamesEngine from '../engine';
+import gameEngine from '../engine';
 
-const task = 'Find the greatest common divisor of given numbers.';
+const task = 'Find the greatest common divisor of getn numbers.';
 
-const giveGameData = () => {
-  let number1 = getRandomNumber(1, 100);
-  let number2 = getRandomNumber(1, 100);
-  let correctAnswer;
+const findGcd = (num1, num2) => {
+  while (num1 !== 0 && num2 !== 0) {
+    if (num1 > num2) {
+      num1 %= num2;
+    } else {
+      num2 %= num1;
+    }
+  }
+  return num1 + num2;
+};
+const getGameData = () => {
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
+  const correctAnswer = findGcd(number1, number2);
   const question = `${number1}  ${number2}`;
 
-  while (number1 !== 0 && number2 !== 0) {
-    if (number1 > number2) {
-      number1 %= number2;
-    } else {
-      number2 %= number1;
-    }
-    correctAnswer = number1 + number2;
-  }
   return [String(correctAnswer), question];
 };
-export default () => gamesEngine(giveGameData, task);
+export default () => gameEngine(getGameData, task);

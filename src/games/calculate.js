@@ -1,16 +1,16 @@
-import { getRandomNumber, getRandomIndex } from '../utils';
-import gamesEngine from '../engine';
+import { getRandomNumber } from '../utils';
+import gameEngine from '../engine';
 
 const task = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 
-const giveGameData = () => {
+const getGameData = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
-  const operators = ['+', '-', '*'];
   const size = operators.length;
-  const index = getRandomIndex(size);
+  const index = getRandomNumber(0, 3);
   const operator = operators[index];
-  const question = `Question: ${number1} ${operator} ${number2}`;
+  const question = `${number1} ${operator} ${number2}`;
   let correctAnswer;
 
   switch (operator) {
@@ -30,4 +30,4 @@ const giveGameData = () => {
   return [String(correctAnswer), question];
 };
 
-export default () => gamesEngine(giveGameData, task);
+export default () => gameEngine(getGameData, task);

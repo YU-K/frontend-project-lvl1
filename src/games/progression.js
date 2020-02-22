@@ -1,33 +1,28 @@
 import { getRandomNumber } from '../utils';
-import gamesEngine from '../engine';
+import gameEngine from '../engine';
 
 const task = 'What number is missing in the progression?';
 const minValue = 2;
 const startMaxValue = 10;
 const stepMaxValue = 6;
 
-const giveGameData = () => {
-  let correctAnswer;
-  let arithmProg = '';
-  const str = [];
+const getGameData = () => {
+  const numbers = [];
   const progressionLength = 10;
-
   const start = getRandomNumber(minValue, startMaxValue);
   const diff = getRandomNumber(minValue, stepMaxValue);
-  const hiddenNumber = start + diff;
+  const indexOfHiddenNumber = getRandomNumber(0, progressionLength)
 
   for (let i = 0; i < progressionLength; i += 1) {
     const number = start + diff * i;
-    if (number === hiddenNumber) {
-      correctAnswer = hiddenNumber;
-      str.push('..');
-    } else {
-      str.push(number);
-    }
+    numbers.push(number);
   }
-  arithmProg = str.join(' ');
 
-  const question = arithmProg;
+  const correctAnswer = numbers[indexOfHiddenNumber];
+  numbers[indexOfHiddenNumber] = '..'
+  const arithmeticProgression = numbers.join(' ');
+
+  const question = arithmeticProgression;
   return [String(correctAnswer), question];
 };
-export default () => gamesEngine(giveGameData, task);
+export default () => gameEngine(getGameData, task);
