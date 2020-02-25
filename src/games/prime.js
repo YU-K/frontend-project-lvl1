@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 import gameEngine from '../engine';
 
 const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';

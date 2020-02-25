@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 import gameEngine from '../engine';
 
 const task = 'What number is missing in the progression?';
@@ -11,7 +11,7 @@ const getGameData = () => {
   const progressionLength = 10;
   const start = getRandomNumber(minValue, startMaxValue);
   const diff = getRandomNumber(minValue, stepMaxValue);
-  const indexOfHiddenNumber = getRandomNumber(0, progressionLength)
+  const indexOfHiddenNumber = getRandomNumber(0, progressionLength);
 
   for (let i = 0; i < progressionLength; i += 1) {
     const number = start + diff * i;
@@ -19,7 +19,7 @@ const getGameData = () => {
   }
 
   const correctAnswer = numbersOfProgression[indexOfHiddenNumber];
-  numbersOfProgression[indexOfHiddenNumber] = '..'
+  numbersOfProgression[indexOfHiddenNumber] = '..';
   const arithmeticProgression = numbersOfProgression.join(' ');
 
   const question = arithmeticProgression;

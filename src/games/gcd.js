@@ -1,9 +1,11 @@
-import { getRandomNumber } from '../utils';
+import getRandomNumber from '../utils';
 import gameEngine from '../engine';
 
 const task = 'Find the greatest common divisor of getn numbers.';
 
-const findGcd = (num1, num2) => {
+const findGcd = (firstNum, secondNum) => {
+  let num1 = firstNum;
+  let num2 = secondNum;
   while (num1 !== 0 && num2 !== 0) {
     if (num1 > num2) {
       num1 %= num2;
