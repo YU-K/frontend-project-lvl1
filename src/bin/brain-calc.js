@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import calculate from '../games/calculate';
+import calculateExpression from '../games/calculate';
 
-calculate();
+calculateExpression();

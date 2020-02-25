@@ -7,8 +7,7 @@ const operators = ['+', '-', '*'];
 const getGameData = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
-  const size = operators.length;
-  const index = getRandomNumber(0, 3);
+  const index = getRandomNumber(0, 2);
   const operator = operators[index];
   const question = `${number1} ${operator} ${number2}`;
   let correctAnswer;

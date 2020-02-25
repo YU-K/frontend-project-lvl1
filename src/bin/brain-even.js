@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import parityCheck from '../games/even';
+import checkNumberForParity from '../games/even';
 
-parityCheck();
+checkNumberForParity();

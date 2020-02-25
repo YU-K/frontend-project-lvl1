@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import brainProgGame from '../games/progression';
+import findTheHiddenNumber from '../games/progression';
 
-brainProgGame();
+findTheHiddenNumber();
