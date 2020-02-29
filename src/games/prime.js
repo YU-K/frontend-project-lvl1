@@ -7,15 +7,14 @@ const isPrime = (num) => {
   if (num < 2) {
     return false;
   }
-  const isDivide = num % num === 0 && num % 1 === 0;
-
-  if (num > 2 && isDivide) {
-    if (num % 2 === 0) {
+  for (let divider = 2; divider <= Math.sqrt(num); divider += 1) {
+    if (num % divider === 0) {
       return false;
     }
   }
   return true;
 };
+
 
 const getGameData = () => {
   const question = getRandomNumber(1, 100);

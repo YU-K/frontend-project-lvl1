@@ -7,7 +7,7 @@ const startMaxValue = 10;
 const stepMaxValue = 6;
 
 const getGameData = () => {
-  const numbersOfProgression = [];
+  const progression = [];
   const progressionLength = 10;
   const start = getRandomNumber(minValue, startMaxValue);
   const diff = getRandomNumber(minValue, stepMaxValue);
@@ -15,14 +15,13 @@ const getGameData = () => {
 
   for (let i = 0; i < progressionLength; i += 1) {
     const number = start + diff * i;
-    numbersOfProgression.push(number);
+    progression.push(number);
   }
 
-  const correctAnswer = numbersOfProgression[indexOfHiddenNumber];
-  numbersOfProgression[indexOfHiddenNumber] = '..';
-  const arithmeticProgression = numbersOfProgression.join(' ');
+  const correctAnswer = progression[indexOfHiddenNumber];
+  progression[indexOfHiddenNumber] = '..';
+  const question = progression.join(' ');
 
-  const question = arithmeticProgression;
   return [String(correctAnswer), question];
 };
 export default () => gameEngine(getGameData, task);
