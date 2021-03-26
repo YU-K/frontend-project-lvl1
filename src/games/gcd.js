@@ -1,7 +1,7 @@
-import getRandomNumber from "../utils";
-import gameEngine from "../engine";
+import getRandomNumber from '../utils';
+import gameEngine from '../engine';
 
-const task = "Find the greatest common divisor of given numbers.";
+const task = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (firstNum, secondNum) => {
   let num1 = firstNum;

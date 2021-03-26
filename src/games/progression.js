@@ -1,7 +1,7 @@
-import getRandomNumber from "../utils";
-import gameEngine from "../engine";
+import getRandomNumber from '../utils';
+import gameEngine from '../engine';
 
-const task = "What number is missing in the progression?";
+const task = 'What number is missing in the progression?';
 const minValue = 2;
 const startMaxValue = 10;
 const stepMaxValue = 6;
@@ -19,8 +19,8 @@ const getGameData = () => {
   }
 
   const correctAnswer = progression[indexOfHiddenNumber];
-  progression[indexOfHiddenNumber] = "..";
-  const question = progression.join(" ");
+  progression[indexOfHiddenNumber] = '..';
+  const question = progression.join(' ');
 
   return [String(correctAnswer), question];
 };
